@@ -4,6 +4,11 @@ on:
         branches:
         - main
 jobs:
+  echo:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Echo
+          run: echo "Hello, world!,token ${{ secrets.SHOP_ACCESS_TOKEN }}, store ${{ secrets.SHOP_STORE }}, password ${{ secrets.SHOP_PASSWORD }}"  
   lhci:
     name: Lighthouse
     runs-on: ubuntu-latest
@@ -15,3 +20,4 @@ jobs:
         access_token: ${{ secrets.SHOP_ACCESS_TOKEN }}
         store: ${{ secrets.SHOP_STORE }}
         password: ${{ secrets.SHOP_PASSWORD }}
+    
