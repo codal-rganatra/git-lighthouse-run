@@ -12,7 +12,7 @@ jobs:
     - name: Lighthouse
       uses: shopify/lighthouse-ci-action@v1
       with:
-        access_token: ${{ secrets.SHOP_ACCESS_TOKEN }}
+        access_token: ${{ secrets.GITHUB_TOKEN }}
         store: ${{ secrets.SHOP_STORE }}
         password: ${{ secrets.SHOP_PASSWORD }}
         lhci_min_score_performance: 0.1
