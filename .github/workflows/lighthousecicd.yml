@@ -15,4 +15,7 @@ jobs:
         access_token: ${{ secrets.SHOP_ACCESS_TOKEN }}
         store: ${{ secrets.SHOP_STORE }}
         password: ${{ secrets.SHOP_PASSWORD }}
+        theme_root: "./dawn"
+        lhci_min_score_performance: 0.1
+        lhci_min_score_accessibility: 0.1
     
