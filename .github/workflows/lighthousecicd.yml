@@ -2,7 +2,7 @@ name: Shopify Lighthouse CI
 on:
     push:
         branches:
-            - main
+        - main
 jobs:
   lhci:
     name: Lighthouse
