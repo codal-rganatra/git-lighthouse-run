@@ -11,7 +11,10 @@ jobs:
     name: Lighthouse
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
 
       - name: Run Shopify Lighthouse CI
         uses: shopify/lighthouse-ci-action@v1
